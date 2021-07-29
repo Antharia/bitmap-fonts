@@ -29,6 +29,13 @@ sudo ln -s ../conf.avail/70-yes-bitmaps.conf .
 sudo dpkg-reconfigure fontconfig
 ```
 
+On Manjaro, this is enough :
+```
+cd /etc/fonts/conf.d/
+sudo rm /etc/fonts/conf.d/10*  
+sudo rm -rf 70-no-bitmaps.conf 
+```
+
 ## Included:
 [artwiz-aleczapka by Oliwier Ptak](http://artwizaleczapka.sourceforge.net/)\
 [bitocra by ninjaaron](https://github.com/ninjaaron/bitocra)\
